@@ -4,210 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Form</title>
+    <link rel="stylesheet" href="static/css/styles.css">
     <!-- <link rel="stylesheet" href="../styles.css"> -->
-    <style>
-        * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+    <!-- <style>
+       
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #e9f5f7;
-    color: #333;
-    
-}
-
-/* Static Navbar */
-nav {
-    background-color: #4caf50;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    font-size: 18px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-.papa{
-    height: 120%;
-    /* width: 1900px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* Container for the form */
-.container {
-    width: 95%;
-    max-width: 1200px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    height: 120%;
-
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 15px;
-    color: #4caf50;
-    font-weight: bold;
-}
-
-.form-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.form-group {
-    width: 33%;
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    font-weight: bold;
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-}
-.form-group select{
-      width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-}
-.form-group checkbox{
-      width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s;
-}
-.form-group input:focus {
-    border-color: #4caf50;
-    outline: none;
-}
-
-.form-group input[type="email"] {
-    color: #4caf50;
-}
-
-@media (max-width: 768px) {
-    .form-group {
-        width: 50%;
-    }
-}
-@media (max-width: 600px) {
-    .form-group {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-.dropdown {
-    position: relative;
-    width: 100;
-}
-.dropdown-button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    cursor: pointer;
-}
-.dropdown:hover .dropdown-options {
-    display: block;
-}
-.dropdown-options {
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    display: none;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1000;
-}
-.dropdown-options label {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    gap: 10px; /* Space between checkbox and text */
-    cursor: pointer;
-}
-.dropdown-options input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-}
-.dropdown-options label:hover {
-    background-color: #f0f0f0;
-}
-
-
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.submit-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Optional hover effect for button */
-.submit-button:hover {
-    background-color: #45a049;
-}
-
-    </style>
+    </style> -->
 </head>
 <body>
 
@@ -361,19 +163,108 @@ h2 {
 
 
                 <div class="form-group">
-                    <label>Github link</label>
-                    <input type="text" placeholder="Enter Github link" name="">
+                    <label>Period of first role</label>
+                    <input type="text" placeholder="Enter Period of first role" name="">
                 </div>
                 <div class="form-group">
-                    <label>Github link</label>
-                    <input type="text" placeholder="Enter Github link" name="">
+                    <label>Period of second role (if any)</label>
+                    <input type="text" placeholder="Enter period of second role" name="">
                 </div>
-                
+                <div class="form-group summ">
+                    <label>SUMMARY</label>
+                    <textarea placeholder="Enter your summary in detail..." name="" rows="16"></textarea>
+
+                </div>
+
+                <div class="form-group grp">
+
+                    
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the first role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- </div> -->
+                    
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the first role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the first role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- <div class="form-group"> -->
+                      <label>  Point for the first role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- </div> -->
+                    
+                </div>
+                <div class="form-group grp">
+
+                    
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the second role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- </div> -->
+                    
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the second role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the second role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- <div class="form-group"> -->
+                        <label>Point for the second role</label>
+                        <input type="text" placeholder="Enter here" name="">
+                    <!-- </div> -->
+                    
+                </div>
 
 
             </div>
          
+<h2>Skills</h2>
+<!-- 
+<div class="form-section">
+    <div class="form-group">
+        <label>skill 1 name</label>
+        <input type="text" placeholder="Enter name" name="">
+    </div>
+    <div class="form-group">
+        <label>skill 1 level</label>
+        <input type="text" placeholder="Enter level" name="">
+    </div>
+<div class="form-group">
 
+    <label>Enter Skills name 1</label>
+    <input type="text" name="s1name">
+</div> -->
+<!-- Dropdown for selecting the number of skills -->
+<!-- Dropdown for selecting the number of skills -->
+<h2>SKILL DETAILS</h2>
+<div class="form-section">
+    <!-- Dropdown for selecting the number of skills -->
+    <div class="form-group">
+        <label for="skillCount">How many skills do you want to add?</label>
+        <select id="skillCount" name="skillCount" onchange="generateSkillFields()">
+            <option value="0">Select a number</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+    </div>
+</div>
+
+<!-- Container for dynamic skill inputs -->
+<div id="skillsInputs" class="form-section chch"></div>
+
+<div class="form-group">
+    <label for="">as</label>
+    <input type="text" name="" id="">
+</div>
+<!-- </div> -->
 
 
 
@@ -401,6 +292,65 @@ document.addEventListener('click', function (event) {
     dropdown.style.display = 'none';
 });
 
+
+// Function to generate skill input fields based on selected count
+// F// Function to generate skill input fields based on selected count
+function generateSkillFields() {
+    const skillCount = document.getElementById("skillCount").value;
+    const skillsContainer = document.getElementById("skillsInputs");
+
+    // Clear previous fields
+    skillsContainer.innerHTML = '';
+
+    // Generate fields based on the selected count
+    if (skillCount > 0) {
+        for (let i = 1; i <= skillCount; i++) {
+            // Create a section for skill name and skill level
+            const skillSection = document.createElement('div');
+            skillSection.classList.add('form-section');
+
+            // Skill Name Input
+            const skillNameDiv = document.createElement('div');
+            skillNameDiv.classList.add('form-group');
+            const skillNameLabel = document.createElement('label');
+            skillNameLabel.textContent = `Skill ${i} Name`;
+            const skillNameInput = document.createElement('input');
+            skillNameInput.type = 'text';
+            skillNameInput.name = `skill${i}Name`;
+            skillNameInput.placeholder = `Enter Skill ${i} Name`;
+
+            skillNameDiv.appendChild(skillNameLabel);
+            skillNameDiv.appendChild(skillNameInput);
+
+            // Skill Level Input
+            const skillLevelDiv = document.createElement('div');
+            skillLevelDiv.classList.add('form-group');
+            const skillLevelLabel = document.createElement('label');
+            skillLevelLabel.textContent = `Skill ${i} Level`;
+            const skillLevelInput = document.createElement('input');
+            skillLevelInput.type = 'text';
+            skillLevelInput.name = `skill${i}Level`;
+            skillLevelInput.placeholder = `Enter Skill ${i} Level`;
+
+            skillLevelDiv.appendChild(skillLevelLabel);
+            skillLevelDiv.appendChild(skillLevelInput);
+
+            // Append both skill name and skill level divs to the skill section
+            skillSection.appendChild(skillNameDiv);
+            skillSection.appendChild(skillLevelDiv);
+
+            // Append the skill section to the container
+            skillsContainer.appendChild(skillSection);
+        }
+    }
+}
+
+
+
+
 </script>
 </body>
 </html>
+
+
+
