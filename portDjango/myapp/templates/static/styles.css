@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e9f5f7;
+    color: #333;
+    
+}
+
+/* Static Navbar */
+nav {
+    background-color: #4caf50;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.papa{
+    /* width: 1900px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Container for the form */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 33%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-group select{
+      width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-group checkbox{
+      width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+.form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.form-group input[type="email"] {
+    color: #4caf50;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    .form-group {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    width: 100;
+}
+.dropdown-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-options {
+    display: block;
+}
+.dropdown-options {
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.dropdown-options label {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 10px; /* Space between checkbox and text */
+    cursor: pointer;
+}
+.dropdown-options input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+.dropdown-options label:hover {
+    background-color: #f0f0f0;
+}
