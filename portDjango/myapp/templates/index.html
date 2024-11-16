@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Form</title>
+    <title>Portfolio craft studio</title>
     <link rel="stylesheet" href="static/css/styles.css">
     <!-- <link rel="stylesheet" href="../styles.css"> -->
     <!-- <style>
@@ -66,6 +66,11 @@
             <label>About your Self</label>
             <input type="email" placeholder="Enter your email">
         </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Profile photo</label>
+
     </div>
 
     <h2>EDUCATIONAL DETAILS</h2>
@@ -220,7 +225,7 @@
 
             </div>
          
-<h2>Skills</h2>
+<!-- <h2>Skills</h2> -->
 <!-- 
 <div class="form-section">
     <div class="form-group">
@@ -238,10 +243,10 @@
 </div> -->
 <!-- Dropdown for selecting the number of skills -->
 <!-- Dropdown for selecting the number of skills -->
-<h2>SKILL DETAILS</h2>
+<h2>Skills Details</h2>
 <div class="form-section">
     <!-- Dropdown for selecting the number of skills -->
-    <div class="form-group">
+    <div class="form-group added">
         <label for="skillCount">How many skills do you want to add?</label>
         <select id="skillCount" name="skillCount" onchange="generateSkillFields()">
             <option value="0">Select a number</option>
@@ -260,9 +265,35 @@
 <!-- Container for dynamic skill inputs -->
 <div id="skillsInputs" class="form-section chch"></div>
 
-<div class="form-group">
-    <label for="">as</label>
-    <input type="text" name="" id="">
+<h2>your achivement at a glace</h2>
+<div class="form-section">
+
+
+    <div class="form-group">
+
+        <label>Most cirt u have done</label>
+        <input type="text" placeholder="Enter Certificate name" name="">
+
+    </div>
+    <div class="form-group">
+
+        <label>Number of those cert</label>
+        <input type="number" placeholder="Enter Certificate cout" name="">
+
+    </div>
+    <div class="form-group">
+
+        <label>Number of lang u know</label>
+        <input type="number" placeholder="Enter number" name="">
+
+    </div>
+    <div class="form-group">
+
+        <label>Number of project u have done</label>
+        <input type="number" placeholder="Enter number" name="" min="0" max="3" step="1">
+
+
+    </div>
 </div>
 <!-- </div> -->
 
@@ -311,26 +342,26 @@ function generateSkillFields() {
 
             // Skill Name Input
             const skillNameDiv = document.createElement('div');
-            skillNameDiv.classList.add('form-group');
+            skillNameDiv.classList.add('form-group','added');
             const skillNameLabel = document.createElement('label');
-            skillNameLabel.textContent = `Skill ${i} Name`;
+            skillNameLabel.textContent = `Enter skill ${i} Name`;
             const skillNameInput = document.createElement('input');
             skillNameInput.type = 'text';
             skillNameInput.name = `skill${i}Name`;
-            skillNameInput.placeholder = `Enter Skill ${i} Name`;
+            skillNameInput.placeholder = `Skill ${i} Name`;
 
             skillNameDiv.appendChild(skillNameLabel);
             skillNameDiv.appendChild(skillNameInput);
 
             // Skill Level Input
             const skillLevelDiv = document.createElement('div');
-            skillLevelDiv.classList.add('form-group');
+            skillLevelDiv.classList.add('form-group','added');
             const skillLevelLabel = document.createElement('label');
-            skillLevelLabel.textContent = `Skill ${i} Level`;
+            skillLevelLabel.textContent = `Enter skill ${i} Level`;
             const skillLevelInput = document.createElement('input');
             skillLevelInput.type = 'text';
             skillLevelInput.name = `skill${i}Level`;
-            skillLevelInput.placeholder = `Enter Skill ${i} Level`;
+            skillLevelInput.placeholder = `Skill ${i} Level`;
 
             skillLevelDiv.appendChild(skillLevelLabel);
             skillLevelDiv.appendChild(skillLevelInput);
