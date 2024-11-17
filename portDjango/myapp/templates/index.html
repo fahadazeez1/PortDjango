@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio craft studio</title>
     <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  
     <!-- <link rel="stylesheet" href="../styles.css"> -->
-    <!-- <style>
-       
+    <style>
+       .container{
+        background-image: url('static/images/img2.jpg');
+        background-size: cover;  
+    background-position: center;  
+    /* filter: blur(8px);  */
+       }
 
-    </style> -->
+    </style>
 </head>
 <body>
 
@@ -66,12 +73,20 @@
             <label>About your Self</label>
             <input type="email" placeholder="Enter your email">
         </div>
+        <div class="form-group">
+            <label for="">Profile photo</label>
+            <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        </div>
+        <div class="form-group">
+            <label for="">Background Photo</label>
+            <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        </div>
+        <div class="form-group">
+            <label for="">Cover Photo</label>
+            <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        </div>
     </div>
 
-    <div class="form-group">
-        <label for="">Profile photo</label>
-
-    </div>
 
     <h2>EDUCATIONAL DETAILS</h2>
     <div class="form-section">
@@ -137,10 +152,10 @@
             <h2>PROFESSIONAL SUMMARY</h2>
        
             <div class="form-section">
-                <div class="form-group dropdown">
-                    <label >Select your Roles</label>
-                    <button class="dropdown-button">Select Your Roles</button>
-                    <div class="dropdown-options">
+                <div class="form-group dropdown summ" style="color: #4caf50;">
+                    <label style="margin-top: 6px;">Select your Roles</label>
+                    <button class="dropdown-button" style="border-radius: 5px; padding: 9px; color:gray; font-size: 16px;">Select Your Roles</button>
+                    <div class="dropdown-options summ">
                         <label>
                             <input type="checkbox" value="Data Analyst">
                             Data Analyst
@@ -177,7 +192,7 @@
                 </div>
                 <div class="form-group summ">
                     <label>SUMMARY</label>
-                    <textarea placeholder="Enter your summary in detail..." name="" rows="16"></textarea>
+                    <textarea placeholder="Enter your summary in detail..." name="" rows="10"></textarea>
 
                 </div>
 
@@ -190,13 +205,13 @@
                     <!-- </div> -->
                     
                     <!-- <div class="form-group"> -->
-                        <label>Point for the first role</label>
+                        <!-- <label>Point for the first role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- <div class="form-group"> -->
-                        <label>Point for the first role</label>
+                        <!-- <label>Point for the first role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- <div class="form-group"> -->
-                      <label>  Point for the first role</label>
+                      <!-- <label>  Point for the first role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- </div> -->
                     
@@ -210,13 +225,13 @@
                     <!-- </div> -->
                     
                     <!-- <div class="form-group"> -->
-                        <label>Point for the second role</label>
+                        <!-- <label>Point for the second role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- <div class="form-group"> -->
-                        <label>Point for the second role</label>
+                        <!-- <label>Point for the second role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- <div class="form-group"> -->
-                        <label>Point for the second role</label>
+                        <!-- <label>Point for the second role</label> -->
                         <input type="text" placeholder="Enter here" name="">
                     <!-- </div> -->
                     
@@ -224,29 +239,15 @@
 
 
             </div>
-         
-<!-- <h2>Skills</h2> -->
-<!-- 
+  
+<h2>SKILL DETAILS</h2>
 <div class="form-section">
-    <div class="form-group">
-        <label>skill 1 name</label>
-        <input type="text" placeholder="Enter name" name="">
+    <div class="form-group ghalf">
+        <label for="">Enter Your CGPA</label>
+        <input type="number" min="0.5" max="9.99999"  step="0.1">
     </div>
-    <div class="form-group">
-        <label>skill 1 level</label>
-        <input type="text" placeholder="Enter level" name="">
-    </div>
-<div class="form-group">
-
-    <label>Enter Skills name 1</label>
-    <input type="text" name="s1name">
-</div> -->
-<!-- Dropdown for selecting the number of skills -->
-<!-- Dropdown for selecting the number of skills -->
-<h2>Skills Details</h2>
-<div class="form-section">
     <!-- Dropdown for selecting the number of skills -->
-    <div class="form-group added">
+    <div class="form-group added ghalf">
         <label for="skillCount">How many skills do you want to add?</label>
         <select id="skillCount" name="skillCount" onchange="generateSkillFields()">
             <option value="0">Select a number</option>
@@ -265,7 +266,7 @@
 <!-- Container for dynamic skill inputs -->
 <div id="skillsInputs" class="form-section chch"></div>
 
-<h2>your achivement at a glace</h2>
+<h2>YOUR ACHIVEMENT AT A GLANCE</h2>
 <div class="form-section">
 
 
@@ -287,13 +288,61 @@
         <input type="number" placeholder="Enter number" name="">
 
     </div>
+
     <div class="form-group">
 
-        <label>Number of project u have done</label>
-        <input type="number" placeholder="Enter number" name="" min="0" max="3" step="1">
+        <label>Project name 1</label>
+        <input type="text" placeholder="Enter Here" name="">
 
 
     </div>
+    <div class="form-group">
+
+        <label>Project name 2 (if any)</label>
+        <input type="text" placeholder="Enter Here" name="">
+
+
+    </div>
+    <div class="form-group">
+
+        <label>Project name 3 (if any)</label>
+        <input type="text" placeholder="Enter Here" name="">
+
+
+    </div>
+    <div class="form-group">
+
+        <label>Project 1 Photos</label>
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">    
+         <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <!-- <input type="photo" placeholder="Enter Here" name=""> -->
+
+
+    </div>
+    <div class="form-group">
+
+        <label>Project 1 Photos </label>
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">    
+         <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <!-- <input type="photo" placeholder="Enter Here" name=""> -->
+
+
+    </div>
+    <div class="form-group">
+
+        <label>Project 3 Photos</label>
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <input type="file" class="photo" name="photo" accept="image/*" capture="user">    
+         <input type="file" class="photo" name="photo" accept="image/*" capture="user">
+        <!-- <input type="photo" placeholder="Enter Here" name=""> -->
+
+
+    </div>
+
+
+
 </div>
 <!-- </div> -->
 
