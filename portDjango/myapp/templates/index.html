@@ -9,6 +9,74 @@
   
     <!-- <link rel="stylesheet" href="../styles.css"> -->
     <style>
+       * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Navbar Styling */
+    nav {
+        background: #333;
+        padding: 15px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    nav ul li {
+        position: relative;
+        transition: all 0.3s ease; /* Smooth transition for size change */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li:hover a {
+        transform: scale(1.2); /* Hovered option grows */
+        color: #ffd700; /* Highlight hovered text */
+    }
+
+    nav ul li:not(:hover) a {
+        transform: scale(0.9); /* Non-hovered options shrink */
+        opacity: 0.7; /* Make non-hovered options slightly faded */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            padding: 10px 20px;
+        }
+    }
        .container{
         background-image: url('static/images/img2.jpg');
         background-size: cover;  
@@ -26,7 +94,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="https://fahadazeez1.github.io/MyPortfolio/">Sample</a></li>
     </ul>
 </nav>
 
