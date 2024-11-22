@@ -9,6 +9,19 @@
   
     <!-- <link rel="stylesheet" href="../styles.css"> -->
     <style>
+        .open-button {
+            display: none; 
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
        * {
         box-sizing: border-box;
         margin: 0;
@@ -419,9 +432,9 @@
                     <!-- <input type="op" placeholder="Enter Facebook name" name=""> -->
                 
                     <div class="button-container">
-                        <button type="submit" class="submit-button">
-                            Submit
-                        </button>
+                        <button type="submit" class="submit-button">Submit  </button>
+                        <button type="button" class="open-button">Open</button>
+
                     </div>
                     
             </form>
@@ -495,7 +508,35 @@ function generateSkillFields() {
 
 
 
+ // Get the submit button
+        // const submitButton = document.querySelector('.submit-button');
 
+        // // Add event listener to the submit button
+        // submitButton.addEventListener('click', function (event) {
+        //     event.preventDefault(); // Prevent the form from submitting
+
+        //     // Check if the 'open' button already exists to avoid duplication
+        //     if (!document.querySelector('.open-button')) {
+        //         // Create the new button
+        //         const openButton = document.createElement('button');
+        //         openButton.textContent = 'Open';
+        //         openButton.classList.add('open-button');
+
+        //         // Append the new button to the button container
+        //         const buttonContainer = document.querySelector('.button-container');
+        //         buttonContainer.appendChild(openButton);
+        //     }
+        // });
+        const submitButton = document.querySelector('.submit-button');
+        const openButton = document.querySelector('.open-button');
+
+        // Add event listener to the submit button
+        submitButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show the open button
+            openButton.style.display = 'inline-block';
+        });
 </script>
 </body>
 </html>
